@@ -1,0 +1,6 @@
+A partir de agora utilizando Linux mint para continuar o projeto e manter no repo.
+ao dar clone crie a pasta "ecom" e garanta que esteja 
+"/ecom/bin" para venv e "ecom/ecom/" para manter a estrutura 
+da pasta onde o comando vai ser "python3.11 ecom/manage.py runserver"
+se tudo der certo vai estar "(ecom) nome_do@seu_usuario: /ecom$"
+com a venv ativada basta dar um "cd ecom" e estara na pasta do projeto. 
