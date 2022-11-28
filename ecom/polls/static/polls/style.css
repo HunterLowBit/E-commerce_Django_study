@@ -1,0 +1,28 @@
+.fronttext{
+   font-family:'Times New Roman';
+   font-size: 66;
+   text-align:center;
+   padding:2px;
+   width: 50px;
+   color: yellow;
+   border: 20px;
+   box-shadow: 3px;
+   border-bottom-color:black;
+   border-top-color:blue;
+   border-right-color:red;
+   border-left-color:purple;
+   border-bottom: 2px;
+   border-top-width:2px;
+   border-left: 2px;
+   border-right: 2px;
+   border-radius: 3px;
+   border-style:outset;
+  
+}
+.navimg{
+    
+    width: 65px;
+    height: 65px;
+    border-style:outset;
+    border-radius: 3px;
+}
