@@ -17,8 +17,8 @@
    border-right: 2px;
    border-radius: 3px;
    border-style:outset;
-  
 }
+
 .navimg{
     
     width: 65px;
@@ -30,9 +30,9 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    
   }
 
 main {
    flex: 1 0 auto;
 }
-      
