@@ -3,10 +3,10 @@ body{
 }
 
 .caixaCarta{
-border-width: 5px;
-padding: auto;
-width:30%;
-
+   padding: 20px;
+   height: 80%;
+justify-content: center;
+align-items: center;
 }
 
 .navimg{
@@ -26,3 +26,12 @@ width:30%;
    width: 145px;
    height: 25px;
 }
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+ main {
+   flex: 1 0 auto;
+ }
