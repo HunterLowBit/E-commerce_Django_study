@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bem-Vindo</title>
+        <title>Retro Atack Bem-Vindo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
@@ -19,11 +19,19 @@
            <a href="" class="brand-logo" >
            <img src="{% static 'polls/MarioSonic1.gif' %}"class='navimg'></a>
            
-          </ul><div class="textoBarra"><img src="{% static 'polls/logot.png' %}"class='textoBarraI'></div>
+
+           
+          <ul><div class="textoBarra"><img src="{% static 'polls/logot.png' %}"class='textoBarraI'></li>
+          <li><a href="/login" class="waves-effect waves-light btn">Logado: {{request.user.username}}</a>
+          </div>
+        
         </div>
     </nav>
 </div>
 <body>
+
+
+
 
 <div class="caixaCarta">
 
@@ -39,7 +47,10 @@
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">Master System<i class="material-icons right">Fechar</i></span>
-        <p>Sonic Chaos, chamado no Japão de Sonic & Tails, é um jogo de plataforma para Sega Master System e Sega Game Gear desenvolvido pela Aspect e publicado em 1993. Esse foi o último jogo intitulado Sonic lançado para Master System na Europa. <br>Data de lançamento: 25 de outubro de 1993.</p>
+        <p>Sonic Chaos, chamado no Japão de Sonic & Tails, é um jogo de plataforma para Sega Master System e Sega Game Gear 
+          desenvolvido pela Aspect e publicado em 1993. Esse foi o último jogo intitulado Sonic
+           lançado para Master System na Europa. 
+           <br>Data de lançamento: 25 de outubro de 1993.     </p>
       </div>
     </div>    <!--carta termina--> </div>
     <div class="col s8 m6 l4 xl4"><!--carta começa--> <div class="card">
