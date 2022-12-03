@@ -1,18 +1,41 @@
-<!--% extends "main/header.html" %}-->
+{% load static  %}
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Retro Login Atack</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'polls/materialize.css' %}">
+</head>
 
 {% block content %}      
 
 {% load crispy_forms_tags %}
 
-<!--Login--> 
-<div class="container py-5">
-  <h1>Login</h1>
-  <form method="POST">
-    {% csrf_token %}
-    {{ login_form|crispy }}
-    <button class="btn btn-primary" type="submit">Login</button>
-  </form>
-  <p class="text-center">Don't have an account? <a href="/register">Create an account</a>.</p>
-</div>
+
+<div class="row">
+    <div class="col s12 m6 l10 xl12">
+      <div class="card blue-grey ">
+        <div class="card-content white-text">
+          <span class="card-title"><a href="/">Retro Atack.</a></span>
+          <p><!--Login--> 
+            <div class="container py-5">
+              <h1>Login</h1>
+              <form method="POST">
+                {% csrf_token %}
+                {{ login_form|crispy }}
+                <button class="btn btn-primary" type="submit">Logar</button>
+              </form>
+              <p class="text-center">Não possui conta? <a href="/register">Criar conta.</a></p>
+            </div></p>
+        </div>
+        <div class="card-action">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 {% endblock %}
