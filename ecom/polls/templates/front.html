@@ -22,7 +22,20 @@
 
            
           <ul><div class="textoBarra"><img src="{% static 'polls/logot.png' %}"class='textoBarraI'></li>
-          <li><a href="/login" class="waves-effect waves-light btn">Logado: {{request.user.username}}</a>
+          <!--<li><a href="/login" class="waves-effect waves-light btn">Logado: {{request.user.username}}</a>-->
+            {% if user.is_authenticated %}
+      
+            <li class="nav-item">
+              <a class="waves-effect waves-light btn" href="/logout">Deslogar da conta: {{user.username}} </a>
+            </li>
+      
+            {% else %}
+      
+            <li class="nav-item">
+              <a class="waves-effect waves-light btn" href="/login">Logar ou Cadastrar</a>
+            </li>
+      
+            {% endif %}
           </div>
         
         </div>
